@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/RegistControl.js"></script>
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-5"></div>
+    <div class="col-sm-4"><h1>注册</h1></div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4"></div>
+    <form action="RegisterServlet" method = "post">
+        <div class="form-group">
+            <label>用户名:</label>
+            <input type="txt" class="form-control" id="name" name="uname" placeholder="用户名">
+            <p id="nameWarn" style="color: #ff0001;display : none" >用户名长度不能超过10</p>
+            <p id="nameWarn1" style="color: #ff0001;display : none">用户名不能为空</p>
+            <p id="nameWarn2" style="color: #ff0001;display : none">用户名已被注册</p>
+        </div>
+        <div class="form-group">
+            <label for="pwd">密码:</label>
+            <input type="password" class="form-control" id="pwd" name="pwd" placeholder="输入密码">
+            <p id="pwdWarn" style="color: #ff0001;display : none">密码长度不能超过15</p>
+            <p id="pwdWarn1" style="color: #ff0001;display : none">密码不能为空</p>
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">密码确认:</label>
+            <input type="password" class="form-control" id="repwd" name="repwd" placeholder="再次输入密码">
+            <p id="repwdWarn" style="color: #ff0001;display : none">两次密码必须相同</p>
+        </div>
+
+
+        <div>
+            <select name="sex" class="form-control">
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+
+        <div>
+            <select name="status" class="form-control">
+                <option name="teacher" value="教师">教师</option>
+                <option name="student" value="学生">学生</option>
+            </select>
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-primary" id="registbtn">注册</button>
+        <button type="reset" class="btn btn-primary">重置</button>&nbsp;
+        <a href="login.html">已注册，请登录</a>
+    </form>
+
+</div>
+
+</body>
+</html>

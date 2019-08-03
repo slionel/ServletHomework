@@ -1,0 +1,97 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>HomeworkSelectServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkSelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkSelectServlet</servlet-name>
+    <url-pattern>/HomeworkSelectServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>HomeworkInsertServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkInsertServlet</servlet-name>
+    <url-pattern>/HomeworkInsertServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HomeworkSortServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkSortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkSortServlet</servlet-name>
+    <url-pattern>/HomeworkSortServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HomeworkCheckServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkCheckServlet</servlet-name>
+    <url-pattern>/HomeworkCheckServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HomeworkContentServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkContentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkContentServlet</servlet-name>
+    <url-pattern>/HomeworkContentServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HomeworkSelectAllServlet</servlet-name>
+    <servlet-class>com.homework.servlet.HomeworkSelectAllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkSelectAllServlet</servlet-name>
+    <url-pattern>/HomeworkSelectAllServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FileUpLoadServlet</servlet-name>
+    <servlet-class>com.homework.servlet.FileUpLoadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUpLoadServlet</servlet-name>
+    <url-pattern>/FileUpLoadServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.homework.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.homework.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckUserNameServlet</servlet-name>
+    <servlet-class>com.homework.servlet.CheckUserNameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckUserNameServlet</servlet-name>
+    <url-pattern>/CheckUserNameServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
